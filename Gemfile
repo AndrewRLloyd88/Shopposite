@@ -60,6 +60,8 @@ end
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 3.26'
+  gem 'poltergeist'
+  gem 'database_cleaner'
   gem "rspec"
   gem 'rspec-rails', '~> 5.0', '>= 5.0.1'
   gem 'selenium-webdriver'
