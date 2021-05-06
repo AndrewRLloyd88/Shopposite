@@ -17,7 +17,7 @@
       <%= fa_icon "shopping-cart", text: 'Add' %>
     <% end %>
     <% else %>
-    <button class="btn btn-danger disabled">Out Of Stock</button>
+    <button class="btn btn-danger disabled"> <%= fa_icon "times-circle" %></i> Out Of Stock</button>
     <% end %> 
     <%= link_to product, class: 'btn btn-default pull-right' do %>
       Details &raquo;
