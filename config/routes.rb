@@ -17,6 +17,8 @@ Rails.application.routes.draw do
   namespace :admin do
     root to: 'dashboard#show'
     resources :products, except: [:edit, :update, :show]
+     #Define new Categories route
+    resources :categories, except: [:edit, :update, :show]
   end
 
   get '/signup', to: 'users#new'
