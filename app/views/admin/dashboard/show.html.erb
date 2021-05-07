@@ -1,2 +1,51 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<div class="service-38">
+  <div class="transparency">
+    <div class="parrallax transparency">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-lg-12">
+            <div class="p-3">
+              <h1 class="service-38">Admin Dashboard: Catalog Statistics</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row no-gutters">
+    <div class="col-lg-12">
+      <div class="card card-shadow border-0">
+        <div class="container p-3">
+          <div class="row no-gutters">
+            <div class="col-lg-6 col-md-3">
+              <div class="d-flex my-2">
+                <div class="display-4 mr-4"><span class="text-success-gradient"></span></div>
+                <div class="text-success-gradient">
+                  <h6 class="subtitle font-weight-light">Product Count</h6>
+                  <h3 class="service-38 text-success-gradient"><i class="fa fa-gift" aria-hidden="true"></i>
+                    <%= @product_count %></h3>
+                </div>
+                <% @product_names.each do |prod_name|  %>
+                <p><%= prod_name %></p>
+                <% end %>  
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4">
+              <div class="d-flex my-2">
+                <div class="display-4 mr-4"><span class="service-38 text-success-gradient"></span></div>
+                <div class="text-success-gradient">
+                  <h6 class="subtitle font-weight-light">Category Count</h6>
+                  <h3 class="service-38 text-success-gradient"><i class="fa fa-list-alt" aria-hidden="true"></i>
+                    <%= @category_count %></h3>
+                </div>
+                <% @category_names.each do |cat_name|  %>
+                <p><%= cat_name %></p>
+                <% end %>  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
